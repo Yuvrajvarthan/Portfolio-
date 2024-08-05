@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Yuvrajvarthan's portfolio
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="h.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Yuvrajvarthan's portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="firstSection">
+            <div class="leftSection">
+                <div>
+                    Hello, I'm <b><span class="lightblue">Yuvrajvarthan</span></b>
+
+                    <div>I'm a </div>
+                    <span id="element"></span>
+
+                </div class="buttton">
+                <button onclick="openLinkedIn()" class="btn">Visit LinkedIn</button>
+                <button onclick="openGitHub()" class="btn">Visit Github</button>
+
+            </div>
+            </div>
+            <div class="rightSection">
+                <img src="rbg.png" alt="" ;>
+            </div>
+
+        </section>
+        <hr>
+        </hr>
+
+        <section id="About">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Yuvrajvarthan" class="profile-img">
+                <p>Hello! I’m Yuvrajvartan Nadar, a passionate second-year IT Engineering student currently 
+                   diving deep into the world of technology. As I navigate through my studies, I’m committed 
+                   to expanding my skill set and exploring the endless possibilities within my field.
+                   Beyond my technical interests, I’m also a nature enthusiast who finds inspiration and
+                   balance in the great outdoors. Combining my love for technology with a keen appreciation
+                   for nature, I strive to bring a unique perspective to my work and continuously grow as 
+                   both an engineer and an individual.
+                </p>
+            </div>
+        </section>
+
+   <hr>
+        </hr>
+
+
+        <section id="Projects">
+            <h1>Project</h1>
+            <div class="project-section">
+
+                <img src="project.jpg" alt="project Image">
+                <div class="content">
+                    <h2>Automatic Solar Tracker</h2>
+                    <p>An automatic solar tracker is a device designed to orient solar panels towards the sun to maximize 
+                    energy capture. It automatically adjusts the position of the panels throughout the day, following the
+                    sun's movement from east to west. The system typically uses sensors, motors, and a controller to detect
+                    the sun's position and adjust the panels' angles accordingly. By optimizing the angle of incidence, 
+                    solar trackers can significantly increase the efficiency and energy output of solar power systems 
+                    compared to fixed-position panels.</p>
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="Contact">
+            <h1>Contact Me</h1>
+            <div class="contact-content">
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+            <a href="https://www.linkedin.com/in/yuvrajvarthan/">LinkedIn</a>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Yuvrajvarthan's portfolio. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['IT Engineer.', 'Nature enthusiast.', 'Web developer.'],
+            typeSpeed: 30,
+        });
+    </script>
+    <script>
+        function openGitHub() {
+            window.open("https://github.com/Yuvrajvarthan", "_blank");
+        }
+        function openLinkedIn() {
+            window.open("https://www.linkedin.com/in/yuvrajvarthan", "_blank");
+        }
+        function togglemenu() {
+            const navlinks = document.querySelector('.nav-links');
+            navlinks.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
