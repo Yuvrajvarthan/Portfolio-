@@ -158,11 +158,12 @@ div.about-content {
 }
 
 .about-content p {
-    font-size: 16px;
+        font-size: 16px;
     line-height: 1.6;
     color: #C0C0FC;
     text-align: justify;
     padding: 0 20px;
+    
 }
 
   .project-section img {
